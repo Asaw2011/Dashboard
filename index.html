@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <script type="text/javascript" src="script.js"></script>
+
+    <h1> Avi's Dashboard</h1>
+    <hr>
+
+    <div class="container">
+
+        <div class="websites">
+
+            <div class="website">
+                <a target="_blank" href="https://www.chess.com/home">
+                <img src="https://www.chess.com/bundles/web/images/brand/chesscom_pawn.b51896bf.png" alt="chess.com image"> </a>
+                <p>Chess</p>
+            </div>
+
+            
+            <div class="website">
+                <a target="_blank" href="https://open.spotify.com/?">
+                <img src="https://play-lh.googleusercontent.com/eN0IexSzxpUDMfFtm-OyM-nNs44Y74Q3k51bxAMhTvrTnuA4OGnTi_fodN4cl-XxDQc" alt="Spotify Image"> </a>
+                <p>Spotify</p>
+            </div>
+
+            
+            <div class="website">
+                <a target="_blank" href="https://www.youtube.com/">
+                <img src="https://www.maryville.edu/wp-content/uploads/2015/11/youtube-logo-png-3575.png" alt="Youtube Image"></a>
+                <p>Youtube</p>
+            </div>
+
+            
+            <div class="website">
+                <a target="_blank" href="https://docs.google.com/document/u/0/?tgif=d">
+                <img src="https://play-lh.googleusercontent.com/emmbClh_hm0WpWZqJ0X59B8Pz1mKoB9HVLkYMktxhGE6_-30SdGoa-BmYW73RJ8MGZQ" alt="Google Docs Image"></a>
+                <p>Google Docs</p>
+            </div>
+
+                        
+            <div class="website">
+                <a target="_blank" href="https://mail.google.com/mail/u/0/#inbox">
+                <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gmail.max-1440x810.format-webp.webp" alt="Gmail Image"></a>
+                <p>Gmail</p>
+            </div>
+
+
+            
+
+        </div>
+
+
+        <div class="tools">
+                <div class="to-do-list">
+
+                    <div id="myDIV" class="header">
+                        <h2>My To Do List</h2>
+                        <input type="text" id="myInput" placeholder="Title...">
+                        <span onclick="newElement()" class="addBtn">Add</span>
+                      </div>
+                      
+                      <ol id="myUL">
+                      </ol>
+
+                </div>
+
+                <div class="notes">
+                    <h4> Notes </h4>
+                    <textarea onblur="saveNotes()" name="" id="notes"></textarea>
+                    
+                </div>
+
+        </div>
+
+    </div>
+
+    
+    <div class="webdisplay">
+        <input id="websiteLink">
+        <button onclick="openWebsite()"> Open </button>
+
+        <iframe id="website" src="https://wikipedia.com">
+        </iframe>
+
+
+    </div>
+
+    <script>
+        document.getElementById("notes").value = localStorage.getItem("notes")
+    </script>
+    
+
+
+</body>
+</html>
+
